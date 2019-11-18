@@ -4,10 +4,8 @@ import { Link } from "gatsby";
 import config from "../../data/SiteConfig";
 import "normalize.css";
 import Footer from "../components/Footer/Footer";
+import Header from "../components/Header/Header";
 
-const aStyle = {
-  color: "green"
-}
 
 export default class MainLayout extends React.Component {
   render() {
@@ -15,13 +13,8 @@ export default class MainLayout extends React.Component {
     return (
       <>
 
-        <header>
-          <ul>
-            <li><Link to="/" activeStyle={aStyle}>{config.siteTitle}</Link></li>
-            <li><Link to="/about" activeStyle={aStyle}>About</Link></li>
-          </ul>
-        </header>
 
+        <Header />
         <Helmet>
           <meta name="description" content={config.siteDescription} />
           <html lang="en" />
