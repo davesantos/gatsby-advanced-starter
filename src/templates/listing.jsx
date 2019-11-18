@@ -5,10 +5,19 @@ import Layout from "../layout";
 import PostListing from "../components/PostListing/PostListing";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
-import "./listing.css";
+import styled from "styled-components";
+
+
+const Pagination = styled.div`
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+`
 
 class Listing extends React.Component {
-  renderPaging() {
+
+  renderPagination() {
+
     const { currentPageNum, pageCount } = this.props.pageContext;
     const prevPage = currentPageNum - 1 === 1 ? "/" : `/${currentPageNum - 1}/`;
     const nextPage = `/${currentPageNum + 1}/`;
@@ -16,7 +25,7 @@ class Listing extends React.Component {
     const isLastPage = currentPageNum === pageCount;
 
     return (
-      <div className="paging-container">
+      <Pagination>
         {!isFirstPage && <Link to={prevPage}>Previous</Link>}
         {[...Array(pageCount)].map((_val, index) => {
           const pageNum = index + 1;
@@ -30,7 +39,7 @@ class Listing extends React.Component {
           );
         })}
         {!isLastPage && <Link to={nextPage}>Next</Link>}
-      </div>
+      </Pagination>
     );
   }
 
@@ -39,14 +48,12 @@ class Listing extends React.Component {
 
     return (
       <Layout>
-        <div className="listing-container">
-          <div className="posts-container">
-            <Helmet title={config.siteTitle} />
-            <SEO />
-            <PostListing postEdges={postEdges} />
-          </div>
-          {this.renderPaging()}
+        <div className="posts-container">
+          <Helmet title={config.siteTitle} />
+          <SEO />
+          <PostListing postEdges={postEdges} />
         </div>
+        {this.renderPagination()}
       </Layout>
     );
   }

@@ -95,7 +95,7 @@ exports.createPages = async ({ graphql, actions }) => {
     return 0;
   });
 
-  // Paging
+  // Pagination
   const { postsPerPage } = siteConfig;
   const pageCount = Math.ceil(postsEdges.length / postsPerPage);
 
