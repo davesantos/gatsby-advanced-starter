@@ -3,6 +3,34 @@ import { Link } from "gatsby";
 import UserLinks from "../UserLinks/UserLinks";
 import "./Footer.css";
 
+import styled from "styled-components"
+
+const TheFoot = styled.footer`
+
+  justify-content: center;
+  align-content: center;
+
+  .notice-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  margin-top: 25px;
+  }
+
+  @media (max-width: 640px - 1px) {
+  .notice-container {
+    justify-content: space-around;
+  }
+  }
+
+  .notice-container h4 {
+  text-align: center;
+  margin: 0;
+  }
+`
+
 class Footer extends Component {
   render() {
     const { config } = this.props;
@@ -12,7 +40,7 @@ class Footer extends Component {
       return null;
     }
     return (
-      <footer className="footer">
+      <TheFoot>
         <UserLinks config={config} labeled />
         <div className="notice-container">
           <h4>{copyright}</h4>
@@ -28,7 +56,7 @@ class Footer extends Component {
             .
           </h4>
         </div>
-      </footer>
+      </TheFoot>
     );
   }
 }
