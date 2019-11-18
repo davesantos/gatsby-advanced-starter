@@ -31,6 +31,7 @@ const TheFoot = styled.footer`
 `
 
 class Footer extends Component {
+
   render() {
     const { config } = this.props;
     const url = config.siteRss;
@@ -40,12 +41,8 @@ class Footer extends Component {
     }
     return (
       <TheFoot>
+        <small>{copyright}</small>
         <UserLinks config={config} labeled />
-          <h4>{copyright}</h4>
-
-          <Link to={url}>
-            <button>RSS</button>
-          </Link>
       </TheFoot>
     );
   }
