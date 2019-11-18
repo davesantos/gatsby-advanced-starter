@@ -13,14 +13,16 @@ export default class MainLayout extends React.Component {
     const { children } = this.props;
     return (
       <>
-
-
-        <Header />
         <Helmet>
           <meta name="description" content={config.siteDescription} />
           <html lang="en" />
         </Helmet>
-        {children}
+
+        <Header />
+
+        <main>
+          {children}
+        </main>
 
         <Footer config={config} />
 
