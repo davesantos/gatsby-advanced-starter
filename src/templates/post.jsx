@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 import Layout from "src/layout";
 import UserInfo from "components/UserInfo/UserInfo";
 import PostTags from "components/Post/PostTags";
-import SocialLinks from "components/SocialLinks/SocialLinks";
+import SocialLinks from "components/SocialLinks";
 import SEO from "components/SEO";
 import Footer from "components/Footer";
 import config from "data/SiteConfig";
