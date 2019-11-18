@@ -46,7 +46,6 @@ class Footer extends Component {
           <Link to={url}>
             <button>RSS</button>
           </Link>
-        </div>
       </TheFoot>
     );
   }
