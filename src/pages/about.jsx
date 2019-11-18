@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Helmet from "react-helmet";
-import Layout from "../layout";
-import About from "../components/About/About";
+import Layout from "src/layout";
+import About from "src/components/About";
 import config from "../../data/SiteConfig";
 
 class AboutPage extends Component {

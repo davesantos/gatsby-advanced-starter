@@ -1,10 +1,10 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { Link } from "gatsby";
-import config from "../../data/SiteConfig";
+import config from "data/SiteConfig";
 import "normalize.css";
 import "./index.css";
-import Footer from "../components/Footer/Footer";
+import Footer from "../components/Footer";
 import Header from "../components/Header/Header";
 
 

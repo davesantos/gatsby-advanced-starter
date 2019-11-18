@@ -2,8 +2,8 @@ import React from "react";
 import Helmet from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../layout";
-import PostListing from "../components/PostListing/PostListing";
-import SEO from "../components/SEO/SEO";
+import PostListing from "src/components/PostListing/PostListing";
+import SEO from "src/components/SEO";
 import config from "../../data/SiteConfig";
 import styled from "styled-components";
 

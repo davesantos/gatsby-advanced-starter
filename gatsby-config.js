@@ -20,7 +20,18 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-root-import`,
+    {
+    resolve: "gatsby-plugin-root-import",
+    options: {
+        content: `${__dirname}/content`,
+        src: `${__dirname}/src`,
+        components: `${__dirname}/src/components`,
+        data: `${__dirname}/data`,
+        pages: `${__dirname}/src/pages`,
+        utils: `${__dirname}/src/utils`,
+        themes: `${__dirname}/src/themes`
+      }
+    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-lodash",
     {
