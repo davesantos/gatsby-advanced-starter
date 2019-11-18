@@ -13,7 +13,10 @@ export default class MainLayout extends React.Component {
       <>
 
         <header>
-          <Link to="/">{config.siteTitle}</Link>
+          <ul>
+            <li><Link to="/">{config.siteTitle}</Link></li>
+            <li><Link to="/about">About</Link></li>
+          </ul>
         </header>
 
         <Helmet>
@@ -21,6 +24,7 @@ export default class MainLayout extends React.Component {
           <html lang="en" />
         </Helmet>
         {children}
+
         <Footer config={config} />
 
       </>

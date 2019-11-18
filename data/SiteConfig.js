@@ -14,10 +14,10 @@ const config = {
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
   dateFormat: "DD/MM/YYYY", // Date format for display.
   postsPerPage: 6, // Amount of posts displayed per listing page.
-  userName: "Advanced User", // Username to display in the author segment.
-  userEmail: "AdvancedUser@example.com", // Email used for RSS feed's author segment
-  userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
-  userLocation: "North Pole, Earth", // User location to display in the author segment.
+  userName: "Dave Santos", // Username to display in the author segment.
+  userEmail: "info@davesantos.com", // Email used for RSS feed's author segment
+  userTwitter: "davesantos", // Optionally renders "Follow Me" in the UserInfo segment.
+  userLocation: "Los Angeles, CA", // User location to display in the author segment.
   userAvatar: "https://api.adorable.io/avatars/150/test.png", // User avatar to display in the author segment.
   userDescription:
     "Yeah, I like animals better than people sometimes... Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year. And the good thing about dogs... is they got different dogs for different people.", // User description to display in the author segment.
@@ -35,7 +35,7 @@ const config = {
     },
     {
       label: "Email",
-      url: "mailto:vagr9k@gmail.com",
+      url: "mailto:info@davesantos.com",
       iconClassName: "fa fa-envelope"
     }
   ],
