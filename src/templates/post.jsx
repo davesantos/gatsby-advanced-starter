@@ -2,11 +2,11 @@ import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "src/layout";
-import UserInfo from "src/components/UserInfo/UserInfo";
-import PostTags from "src/components/PostTags/PostTags";
-import SocialLinks from "src/components/SocialLinks/SocialLinks";
-import SEO from "src/components/SEO";
-import Footer from "src/components/Footer";
+import UserInfo from "components/UserInfo/UserInfo";
+import PostTags from "components/Post/PostTags";
+import SocialLinks from "components/SocialLinks/SocialLinks";
+import SEO from "components/SEO";
+import Footer from "components/Footer";
 import config from "data/SiteConfig";
 import "./b16-tomorrow-dark.css";
 

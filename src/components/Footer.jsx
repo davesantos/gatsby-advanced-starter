@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
-import UserLinks from "./UserLinks/UserLinks";
+import UserLinks from "components/User/UserLinks";
 
 import styled from "styled-components"
 
