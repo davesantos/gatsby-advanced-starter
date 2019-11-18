@@ -2,12 +2,11 @@ import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../layout";
-import UserInfo from "../components/UserInfo/UserInfo";
-import Disqus from "../components/Disqus/Disqus";
-import PostTags from "../components/PostTags/PostTags";
-import SocialLinks from "../components/SocialLinks/SocialLinks";
-import SEO from "../components/SEO/SEO";
-import Footer from "../components/Footer/Footer";
+import UserInfo from "src/components/UserInfo/UserInfo";
+import PostTags from "src/components/PostTags/PostTags";
+import SocialLinks from "src/components/SocialLinks/SocialLinks";
+import SEO from "src/components/SEO/SEO";
+import Footer from "src/components/Footer/Footer";
 import config from "../../data/SiteConfig";
 import "./b16-tomorrow-dark.css";
 
@@ -40,8 +39,6 @@ export default class PostTemplate extends React.Component {
             <SocialLinks postPath={slug} postNode={postNode} />
 
             <UserInfo config={config} />
-            <Disqus postNode={postNode} />
-            <Footer config={config} />
 
           </div>
 
