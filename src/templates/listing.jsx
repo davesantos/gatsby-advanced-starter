@@ -48,11 +48,10 @@ class Listing extends React.Component {
 
     return (
       <Layout>
-        <div className="posts-container">
+
           <Helmet title={config.siteTitle} />
           <SEO />
           <PostListing postEdges={postEdges} />
-        </div>
         {this.renderPagination()}
       </Layout>
     );

@@ -6,7 +6,7 @@ class PostTags extends Component {
   render() {
     const { tags } = this.props;
     return (
-      <ul className="post-tag-container">
+      <ul>
         {tags &&
           tags.map(tag => (
             <li>
