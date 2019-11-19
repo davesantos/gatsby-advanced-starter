@@ -2,7 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "src/layout";
-import UserInfo from "components/UserInfo/UserInfo";
+import UserInfo from "components/User/UserInfo";
 import PostTags from "components/Post/PostTags";
 import SocialLinks from "components/SocialLinks";
 import SEO from "components/SEO";
